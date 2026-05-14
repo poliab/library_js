@@ -1,0 +1,192 @@
+.book-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.book-add-favorite {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-add-favorite.in-favorites {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.book-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.book-cover {
+    flex: 0 0 250px;
+}
+
+.book-cover-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.book-info-section {
+    margin-bottom: 30px;
+}
+
+.book-description-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.book-description-header h2 {
+    margin: 0;
+}
+
+.book-translate-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.translate-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.translate-api {
+    background-color: #007bff;
+    color: white;
+}
+
+.translate-api:hover {
+    background-color: #0069d9;
+}
+
+.translate-api.loading {
+    background-color: #6c757d;
+    cursor: wait;
+}
+
+.translate-google {
+    background-color: #28a745;
+    color: white;
+}
+
+.translate-google:hover {
+    background-color: #218838;
+}
+
+.book-description-container {
+    position: relative;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.translation-notice {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.book-info-section h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.book-description {
+    line-height: 1.6;
+    color: #555;
+}
+
+.authors-list, .editions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.authors-list li, .editions-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.editions-list li {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+.loading {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .book-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .book-content {
+        flex-direction: column;
+    }
+    
+    .book-cover {
+        margin: 0 auto 20px;
+    }
+    
+    .book-description-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 
